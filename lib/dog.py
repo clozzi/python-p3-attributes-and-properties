@@ -23,7 +23,7 @@ class Dog:
     "Pointer"
 ]
     
-    def __init__(self, name="", breed=""):
+    def __init__(self, name="Fido", breed="Mastiff"):
         self._name = None
         self._breed = None
         self.name = name
@@ -47,6 +47,6 @@ class Dog:
     @breed.setter
     def breed(self, value):
         if value not in self.APPROVED_BREEDS:
-            print("Breed must be in the list of approved breeds.")
+            print("Breed must be in list of approved breeds.")
         else:
             self._breed = value
